@@ -1,0 +1,4 @@
+.idea
+src/writable/session/ci_*
+src/writable/logs/log-*
+src/writable/debugbar/debugbar_*

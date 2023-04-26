@@ -2,3 +2,6 @@
 src/writable/session/ci_*
 src/writable/logs/log-*
 src/writable/debugbar/debugbar_*
+src/public/uploads/cars
+src/public/uploads/config
+src/public/uploads/players

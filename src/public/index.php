@@ -1,6 +1,10 @@
 <?php
+
 if (strpos($_SERVER['SERVER_SOFTWARE'], 'Development Server') !== false) {
-    if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] != 'carrera' || $_SERVER['PHP_AUTH_PW'] != 'rms') {
+    $httpusername = 'carrera';
+    $httppassword = 'rms';
+    if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER'] != $httpusername
+            || $_SERVER['PHP_AUTH_PW'] != $httppassword) {
         header('WWW-Authenticate: Basic realm="Carrera RMS Statistics"');
         header('HTTP/1.0 401 Unauthorized');
         echo 'Please reload to login.';
